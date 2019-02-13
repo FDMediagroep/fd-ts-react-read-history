@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReadHistory renders correctly 1`] = `
+<div
+  className="fd-card fd-card-read-history"
+>
+  <h3
+    className="fd-typography card-h h-read-history"
+    textStyle="card-h"
+  >
+    Recent gelezen
+  </h3>
+  <nav>
+    <a
+      href="https://fd.nl"
+    >
+      <time>
+        15:29
+      </time>
+      <span>
+        title van nieuwsbericht
+      </span>
+    </a>
+  </nav>
+</div>
+`;
+
+exports[`ReadHistory renders correctly 2`] = `
+<div
+  className="fd-card fd-card-read-history class-name"
+>
+  <h3
+    className="fd-typography card-h h-read-history"
+    textStyle="card-h"
+  >
+    Recent gelezen blokje
+  </h3>
+  <nav>
+    <a
+      href="https://fd.nl"
+      target="_blank"
+    >
+      <time>
+        15:29
+      </time>
+      <span>
+        title van nieuwsbericht
+      </span>
+    </a>
+  </nav>
+</div>
+`;
