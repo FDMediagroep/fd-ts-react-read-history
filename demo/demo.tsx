@@ -18,6 +18,7 @@ ReactDOM.render(<>
 
         <div>
             <ReadHistory
+                cardStyle="default"
                 news={[{
                     uuid: uniqid(),
                     dateTime: `11:18`,

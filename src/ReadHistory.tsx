@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import Card, { CardStyle } from "@fdmg/fd-card";
+import Card, { CardStyle, CardTypes } from "@fdmg/fd-card";
 import TypoGraphy, { getAllTextStyles } from "@fdmg/fd-typography";
 import { createGlobalStyle } from "styled-components";
 
@@ -13,6 +13,7 @@ interface NewsItem {
 }
 
 export interface Props {
+    cardStyle: CardTypes;
     className?: string;
     news: NewsItem[];
     title?: string;
@@ -24,7 +25,7 @@ export default class ReadHistory extends PureComponent<Props, any> {
         return (
             <>
                 <GlobalStyle/>
-                <Card className={`fd-card-read-history${this.props.className ? ` ${this.props.className}` : ''}`}>
+                <Card cardStyle={this.props.cardStyle} className={`fd-card-read-history${this.props.className ? ` ${this.props.className}` : ''}`}>
                     <TypoGraphy className="h-read-history" textStyle='card-h'><h3>{this.props.title ? this.props.title : 'Recent gelezen'}</h3></TypoGraphy>
                     <nav>
                         {

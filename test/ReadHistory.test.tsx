@@ -4,9 +4,9 @@ import React from 'react';
 
 describe('ReadHistory', () => {
     test('renders correctly', () => {
-        let readHistory = TestRenderer.create(<ReadHistory news={[{uuid: '1', dateTime: '15:29', title: 'title van nieuwsbericht', url: 'https://fd.nl'}]}/>);
+        let readHistory = TestRenderer.create(<ReadHistory cardStyle="default" news={[{uuid: '1', dateTime: '15:29', title: 'title van nieuwsbericht', url: 'https://fd.nl'}]}/>);
         expect(readHistory.toJSON()).toMatchSnapshot();
-        readHistory = TestRenderer.create(<ReadHistory className="class-name" title="Recent gelezen blokje" news={[{uuid: '2', dateTime: '15:29', title: 'title van nieuwsbericht', url: 'https://fd.nl', target: "_blank"}]}/>);
+        readHistory = TestRenderer.create(<ReadHistory cardStyle="article" className="class-name" title="Recent gelezen blokje" news={[{uuid: '2', dateTime: '15:29', title: 'title van nieuwsbericht', url: 'https://fd.nl', target: "_blank"}]}/>);
         expect(readHistory.toJSON()).toMatchSnapshot();
     });
 });

@@ -2,7 +2,8 @@
 
 exports[`ReadHistory renders correctly 1`] = `
 <div
-  className="fd-card fd-card-read-history"
+  cardStyle="default"
+  className="fd-card fd-card-read-history default"
 >
   <h3
     className="fd-typography card-h h-read-history"
@@ -27,7 +28,8 @@ exports[`ReadHistory renders correctly 1`] = `
 
 exports[`ReadHistory renders correctly 2`] = `
 <div
-  className="fd-card fd-card-read-history class-name"
+  cardStyle="article"
+  className="fd-card fd-card-read-history class-name article"
 >
   <h3
     className="fd-typography card-h h-read-history"
