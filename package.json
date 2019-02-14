@@ -1,6 +1,6 @@
 {
   "name": "@fdmg/fd-read-history",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "FD-themed read history",
   "types": "dist/ReadHistory.d.ts",
   "main": "dist/read-history.js",

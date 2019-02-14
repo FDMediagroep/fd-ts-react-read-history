@@ -59,6 +59,12 @@ const GlobalStyle = createGlobalStyle`
         }
     }
 
+    &.persoonlijk {
+        .h-read-history {
+            color: #e57e30;
+        }
+    }
+
     > a,
     nav > a {
         display: block;
