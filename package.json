@@ -1,6 +1,6 @@
 {
   "name": "@fdmg/fd-read-history",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "FD-themed read history",
   "types": "dist/ReadHistory.d.ts",
   "main": "dist/read-history.js",
@@ -58,7 +58,7 @@
     "tslint": "^5.13.0",
     "tslint-react": "^3.6.0",
     "typescript": "^3.3.3333",
-    "webpack": "^4.29.5",
+    "webpack": "^4.29.6",
     "webpack-cli": "^3.2.1"
   },
   "dependencies": {

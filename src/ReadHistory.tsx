@@ -25,7 +25,7 @@ export default class ReadHistory extends PureComponent<Props, any> {
         return (
             <>
                 <GlobalStyle/>
-                <Card cardStyle={this.props.cardStyle} className={`fd-card-read-history${this.props.className ? ` ${this.props.className}` : ''}`}>
+                <Card cardStyle={this.props.cardStyle} className={`fd-read-history${this.props.className ? ` ${this.props.className}` : ''}`}>
                     <TypoGraphy className="h-read-history" textStyle='card-h'><h3>{this.props.title ? this.props.title : 'Recent gelezen'}</h3></TypoGraphy>
                     <nav>
                         {
@@ -46,8 +46,8 @@ export default class ReadHistory extends PureComponent<Props, any> {
 }
 
 const GlobalStyle = createGlobalStyle`
-.fd-card-read-history {
-    .h-read-history,
+.fd-read-history {
+    h3.h-read-history,
     > a,
     nav > a {
         padding: 12px 10px;
