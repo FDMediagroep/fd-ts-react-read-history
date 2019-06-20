@@ -1,4 +1,3 @@
-import { PureComponent } from "react";
 import { CardTypes } from "@fdmg/fd-card";
 interface NewsItem {
     uuid: string;
@@ -14,8 +13,6 @@ export interface Props {
     news: NewsItem[];
     title?: string;
 }
-export default class ReadHistory extends PureComponent<Props, any> {
-    render(): JSX.Element;
-}
-export declare const ReadHistoryStyle: import("styled-components").GlobalStyleComponent<{}, import("styled-components").DefaultTheme>;
+export default function ReadHistory(props: Props): JSX.Element;
+export declare const ReadHistoryStyle: import("styled-components").FlattenSimpleInterpolation;
 export {};

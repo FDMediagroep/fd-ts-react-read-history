@@ -1,7 +1,7 @@
-import React, { PureComponent } from "react";
+import React from "react";
 import Card, { CardStyle, CardTypes } from "@fdmg/fd-card";
 import TypoGraphy, { getAllTextStyles } from "@fdmg/fd-typography";
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, css } from "styled-components";
 
 interface NewsItem {
     uuid: string;
@@ -19,33 +19,30 @@ export interface Props {
     title?: string;
 }
 
-export default class ReadHistory extends PureComponent<Props, any> {
-
-    render() {
-        return (
-            <>
-                <GlobalStyle/>
-                <Card cardStyle={this.props.cardStyle} className={`fd-read-history${this.props.className ? ` ${this.props.className}` : ''}`}>
-                    <TypoGraphy className="h-read-history" textStyle='card-h'><h3>{this.props.title ? this.props.title : 'Recent gelezen'}</h3></TypoGraphy>
-                    <nav>
-                        {
-                            this.props.news.map((newsItem) => {
-                                return (
-                                    <a key={newsItem.uuid} href={newsItem.url} target={newsItem.target}>
-                                        <time>{newsItem.dateTime}</time>
-                                        <span className={newsItem.isRead ? 'is-read' : undefined}>{newsItem.title}</span>
-                                    </a>
-                                );
-                            })
-                        }
-                    </nav>
-                </Card>
-            </>
-        );
-    }
+export default function ReadHistory(props: Props) {
+    return (
+        <>
+            <GlobalStyle/>
+            <Card cardStyle={props.cardStyle} className={`fd-read-history${props.className ? ` ${props.className}` : ''}`}>
+                <TypoGraphy className="h-read-history" textStyle='card-h'><h3>{props.title ? props.title : 'Recent gelezen'}</h3></TypoGraphy>
+                <nav>
+                    {
+                        props.news.map((newsItem) => {
+                            return (
+                                <a key={newsItem.uuid} href={newsItem.url} target={newsItem.target}>
+                                    <time>{newsItem.dateTime}</time>
+                                    <span className={newsItem.isRead ? 'is-read' : undefined}>{newsItem.title}</span>
+                                </a>
+                            );
+                        })
+                    }
+                </nav>
+            </Card>
+        </>
+    );
 }
 
-const GlobalStyle = createGlobalStyle`
+const styles = css`
 .fd-read-history {
     h3.h-read-history,
     > a,
@@ -93,8 +90,10 @@ const GlobalStyle = createGlobalStyle`
 }
 `;
 
-export const ReadHistoryStyle = createGlobalStyle`
-    ${(CardStyle as any).globalStyle.rules}
-    ${getAllTextStyles(['card-h']).globalStyle.rules}
-    ${(GlobalStyle as any).globalStyle.rules}
+const GlobalStyle = createGlobalStyle`${styles}`;
+
+export const ReadHistoryStyle = css`
+    ${CardStyle}
+    ${getAllTextStyles(['card-h'])}
+    ${styles}
 `;
