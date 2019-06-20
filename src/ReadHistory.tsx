@@ -90,10 +90,10 @@ const styles = css`
 }
 `;
 
-const GlobalStyle = createGlobalStyle`${styles}`;
-
 export const ReadHistoryStyle = css`
     ${CardStyle}
     ${getAllTextStyles(['card-h'])}
     ${styles}
 `;
+
+const GlobalStyle = createGlobalStyle`${ReadHistoryStyle}`;
