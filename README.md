@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/FDMediagroep/fd-ts-react-read-history.svg?branch=master)](https://travis-ci.org/FDMediagroep/fd-ts-react-read-history)
 [![Coverage Status](https://coveralls.io/repos/github/FDMediagroep/fd-ts-react-read-history/badge.svg?branch=master)](https://coveralls.io/github/FDMediagroep/fd-ts-react-read-history?branch=master)
 [![npm version](https://badge.fury.io/js/%40fdmg%2Ffd-read-history.svg)](https://badge.fury.io/js/%40fdmg%2Ffd-read-history)
-[![Greenkeeper badge](https://badges.greenkeeper.io/FDMediagroep/fd-ts-react-read-history.svg)](https://greenkeeper.io/)
+
 
 # fd-read-history
 FD-themed read-history.
