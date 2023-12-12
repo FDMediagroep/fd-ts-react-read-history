@@ -1,3 +1,5 @@
+> :exclamation: **DEPRECATED** :exclamation: : Superseded by @fdmg/design-system. See: https://github.com/FDMediagroep/fd-design-system
+
 [![Build Status](https://travis-ci.org/FDMediagroep/fd-ts-react-read-history.svg?branch=master)](https://travis-ci.org/FDMediagroep/fd-ts-react-read-history)
 [![Coverage Status](https://coveralls.io/repos/github/FDMediagroep/fd-ts-react-read-history/badge.svg?branch=master)](https://coveralls.io/github/FDMediagroep/fd-ts-react-read-history?branch=master)
 [![npm version](https://badge.fury.io/js/%40fdmg%2Ffd-read-history.svg)](https://badge.fury.io/js/%40fdmg%2Ffd-read-history)
